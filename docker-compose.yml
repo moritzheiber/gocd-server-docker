@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  gocd-server:
+    image: gocd-server
+    container_name: gocd-server
+    ports:
+      - "8153:8153"
+    environment:
+      GOCD_ADMIN_PASSWORD: "test"
+      AGENT_AUTO_REGISTER_KEY: "test"

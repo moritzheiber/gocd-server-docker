@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cruise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cruise-config.xsd" schemaVersion="81">
+  <server artifactsdir="artifacts" commandRepositoryLocation="default" agentAutoRegisterKey="{{ env.Getenv "AGENT_AUTO_REGISTER_KEY" }}">
+    <security>
+      <passwordFile path="/gocd/config/passwd_file" />
+    </security>
+  </server>
+</cruise>

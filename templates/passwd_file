@@ -1,0 +1,1 @@
+admin:{{ ( env.Getenv "GOCD_ADMIN_PASSWORD") | crypto.Bcrypt }}
